@@ -1,0 +1,16 @@
+<div class="card mb-3 mt-4"  style="max-width: 540px;" *ngFor="let item of buscando" >
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{item.img}}" class="card-img mt-5 pt-5 p-2" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Accesorio: {{item.nombre}}</h5>
+          <hr>
+            <p>Fecha creación: {{item.creacion}}</p>
+          <p class="card-text">Descripción: {{item.bio}}</p>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary mb-3 mx-5 my-0" [routerLink]="['/ropas']">Regresar</button>
+  </div>
